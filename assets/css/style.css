@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#nav-icon {
+  width: 115px;
+  height: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+.navbar-brand {
+  font-family: "Cardo", serif;
+}
+#inner-text {
+  color: white;
+  padding: 70px 120px;
+  text-align: center;
+  div {
+    max-width: 660px;
+    span {
+      font-family: "Cardo", serif;
+      font-size: 38px;
+    }
+    button {
+      background-color: #27a776;
+      border: none;
+    }
+  }
+}
+
+#foot {
+  text-align: center;
+  color: white;
+}
+.foot-icons {
+  margin: 10px 0;
+  display: flex;
+
+  justify-content: center;
+}
+#iconFoot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  cursor: pointer;
+  &:hover {
+    border: solid #27a776;
+  }
+}
+
+#img-section {
+  div {
+    overflow: hidden;
+    img {
+      object-fit: cover;
+      transition: 1s ease;
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      filter: grayscale(90%);
+      &:hover {
+        transform: scale(1.2);
+        filter: grayscale(0%);
+      }
+    }
+  }
+}
